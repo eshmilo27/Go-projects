@@ -1,0 +1,26 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "go",
+            "request": "launch",
+            "name": "Launch test_ollama_llm.go",
+            "console": "integratedTerminal",
+            "program": "${workspaceFolder}/${input:programName}"
+        }
+    ],
+    "inputs": [
+        {
+            "type": "pickString",
+            "id": "programName",
+            "description": "Select the Go file to debug",
+            "options": [
+                "test_ollama_llm.go",
+                "test_pointers.go"
+            ]
+        }
+    ]
+}
