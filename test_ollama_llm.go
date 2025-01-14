@@ -22,9 +22,7 @@ func main() {
 
 	// Create a new reader to read input from the standard input (console).
 	reader := bufio.NewReader(os.Stdin)
-	// userInput stores the input provided by the user as a string.
-	var userInput = ""
-	for userInput == "" {
+	for {
 		// Prompt the user to enter a question.
 		fmt.Print("Enter your question: ")
 		userInput, err := reader.ReadString('\n')
@@ -59,8 +57,5 @@ func main() {
 				break
 			}
 		}
-
-		// Reset userInput to prompt for another question.
-		userInput = ""
 	}
 }
